@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Requests</h1>
+<ol>
+    {% for request in object_list %}
+    <li>{{request.method}} {{request.path}}</li>
+    {% endfor %}
+</ol>
+{% endblock body %}

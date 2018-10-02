@@ -1,0 +1,32 @@
+[
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "title": "Fahrenheit 451",
+      "author": "Ray Bradbury",
+      "isbn": "9781451673319",
+      "price": 8.99
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "title": "1984",
+      "author": "George Orwell",
+      "isbn": "9780451524935",
+      "price": 5.99
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "title": "The Moon Is a Harsh Mistress",
+      "author": "Robert A. Heinlein",
+      "isbn": "0312863551",
+      "price": 14.44
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1>Books</h1>
+<ol>
+    {% for book in object_list %}
+    <li>{{book.title}} by {{book.author}}- ${{book.price}} <a href="{% url 'book-edit' book.id %}">EDIT</a>/<a href="{% url 'book-delete' book.id %}">DELETE</a></li>
+    {% empty %}
+    <li>No books yet.</li>
+    {% endfor %}
+</ol>
+<form action="{% url 'book-add'%}">
+    <input type="submit" value="Add new" />
+</form>
+{% endblock body %}
