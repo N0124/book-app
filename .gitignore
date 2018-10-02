@@ -1,5 +1,6 @@
 #PyCharm project
 .idea/
+__pycache__/
 
 #Test DB
 db.sqlite3
